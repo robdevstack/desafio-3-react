@@ -33,13 +33,13 @@ function Form({ colaboradores }) {
     const filtrarMostrarColaboradores = renderedColaboradores.filter((colaborador) =>
       colaborador.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
-  
+
     return (
       <div>
         <div>
-        <nav class="navbar bg-body-tertiary">
+        <nav class="navbar bg-primary mb-4">
   <div class="container-fluid">
-    <a class="navbar-brand">Buscador de colaboradores</a>
+    <a className="navbar-brand text-light">Buscador de colaboradores</a>
     <form class="d-flex" role="search">
       <input class="form-control me-2" value={searchTerm} type="search" placeholder="Buscar" onChange={handleSearch}/>
     </form>
